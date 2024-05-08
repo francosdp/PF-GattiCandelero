@@ -473,6 +473,69 @@ main {
           font-weight: bolder;
           background-color: #0104002a; }
 
+@media (max-width: 1420px) {
+  .perfumes-main .perfumes-intro h3 {
+    font-size: 20px;
+    width: auto; }
+  .perfumes-main .perfumes-intro .first-row img {
+    height: 220px; }
+  .perfumes-main .perfumes-intro .first-row .perfumes-overlay {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 350px;
+    justify-content: space-between; }
+    .perfumes-main .perfumes-intro .first-row .perfumes-overlay h4 {
+      font-size: 20px; }
+    .perfumes-main .perfumes-intro .first-row .perfumes-overlay button {
+      padding: 10px;
+      margin: 5px; }
+  .perfumes-main .perfumes-intro .second-row h3 {
+    font-size: 35px; }
+  .perfumes-main .perfumes-intro .second-row .perfumes-grupal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .perfumes-main .perfumes-intro .second-row .perfumes-grupal .perfumes-individual {
+      display: flex;
+      flex-direction: row;
+      margin: 5px;
+      width: auto; }
+      .perfumes-main .perfumes-intro .second-row .perfumes-grupal .perfumes-individual a img {
+        width: 150px;
+        height: 150px;
+        margin: 5px; }
+      .perfumes-main .perfumes-intro .second-row .perfumes-grupal .perfumes-individual .perfumes-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 12px;
+        margin: 5px; }
+  .perfumes-main .perfumes-banners button {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 12px;
+    padding-top: 7px;
+    padding-right: 12px;
+    padding-bottom: 7px;
+    font-size: 12px; }
+  .perfumes-main .perfumes-banners .primer-banner {
+    height: 450px; }
+    .perfumes-main .perfumes-banners .primer-banner .banner-uno {
+      height: 400px; }
+      .perfumes-main .perfumes-banners .primer-banner .banner-uno img {
+        height: 200px; }
+  .perfumes-main .perfumes-banners .banner-dividido {
+    display: flex;
+    flex-direction: column;
+    height: auto; }
+    .perfumes-main .perfumes-banners .banner-dividido .banner {
+      height: 400px; }
+      .perfumes-main .perfumes-banners .banner-dividido .banner img {
+        width: 412px;
+        height: 340px;
+        border-radius: 0; } }
+
 /* Fuentes
 font-family: "Lato", sans-serif
 font-family: "STIX Two Text", serif */
