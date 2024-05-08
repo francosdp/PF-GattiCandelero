@@ -1,44 +1,45 @@
 main {
-    background-color: #dee4f3;
-    width: 100%;
-  }
-  
-  .banner-img {
-    img {
-      width: 100%;
-    }
-  }
-  
-  .product-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 1px 1px 5px 2px #51515195;
-    margin: 10px 0px;
-    p {
-      font-family: "Lato", sans-serif;
-      font-size: 18px;
-      margin-top: 0px 10px;
-    }
-    h3 {
-      font-family: "STIX Two Text", serif;
-      font-size: 26px;
-      font-weight: lighter;
-    }
-    button {
-      background-color: rgba(0, 0, 0, 0.258);
-      padding-left: 25px;
-      padding-top: 15px;
-      padding-right: 25px;
-      padding-bottom: 15px;
-      font-size: 15px;
-      border-radius: 15px;
+  background-color: #dee4f3;
+  width: 100%;
+  .products{
+    .product-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
       box-shadow: 1px 1px 5px 2px #51515195;
-      margin-bottom: 10px;
+      margin: 10px 0px;
+      p {
+        font-family: "Lato", sans-serif;
+        font-size: 18px;
+        margin-top: 0px 10px;
+      }
+      h3 {
+        font-family: "STIX Two Text", serif;
+        font-size: 26px;
+        font-weight: lighter;
+      }
+      button {
+        background-color: rgba(0, 0, 0, 0.258);
+        padding-left: 25px;
+        padding-top: 15px;
+        padding-right: 25px;
+        padding-bottom: 15px;
+        font-size: 15px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 5px 2px #51515195;
+        margin-bottom: 10px;
+      }
+      button:hover {
+        font-weight: bolder;
+        background-color: #0104002a;
+      }
     }
-    button:hover {
-      font-weight: bolder;
-      background-color: #0104002a;
+
+    .banner-img {
+      img {
+        width: 100%;
+      }
     }
   }
+}

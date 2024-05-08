@@ -57,98 +57,127 @@ form .btn:hover {
   color: #010400;
   background-color: #eadfb4; }
 
-.eboutique {
+footer .eboutique {
   background-color: #7f95d1;
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .eboutique h2 {
+  footer .eboutique h2 {
     text-align: center;
     font-family: "STIX Two Text", serif;
     color: white;
     font-size: 50px; }
-  .eboutique p {
+  footer .eboutique p {
     font-size: 20px;
     font-family: "Lato", sans-serif;
     font-weight: lighter; }
 
-.bottom {
+footer .bottom {
   display: flex;
   justify-content: space-between;
   background-color: #7f95d1;
   padding-top: 15px;
   padding-bottom: 15px; }
-  .bottom .newsletter p {
+  footer .bottom .newsletter p {
     font-size: small;
     margin-left: 10px; }
-    .bottom .newsletter p a {
+    footer .bottom .newsletter p a {
       color: #010400;
       margin-left: 10px; }
-  .bottom .newsletter .newsletter-title {
+  footer .bottom .newsletter .newsletter-title {
     margin-left: 10px; }
-  .bottom .newsletter .newsletter-form {
+  footer .bottom .newsletter .newsletter-form {
     margin-left: 10px; }
-    .bottom .newsletter .newsletter-form input {
+    footer .bottom .newsletter .newsletter-form input {
       margin: 3px; }
-  .bottom .social {
+  footer .bottom .social {
     text-align: right;
     margin-right: 10px; }
-    .bottom .social a img:hover {
+    footer .bottom .social a img:hover {
       width: 55px;
       height: 55px; }
-    .bottom .social a .facebook {
+    footer .bottom .social a .facebook {
       width: 50px;
       height: 45px; }
-    .bottom .social a img {
+    footer .bottom .social a img {
       width: 50px;
       height: 48px; }
-  .bottom .to-top {
+  footer .bottom .to-top {
     background-color: #010400;
     text-align: center;
     padding: 15px;
     font-size: large; }
-    .bottom .to-top a {
+    footer .bottom .to-top a {
       color: white;
       text-decoration: none; }
-  .bottom .to-top:hover {
+  footer .bottom .to-top:hover {
     font-weight: bolder;
     font-size: 16px; }
+
+@media (max-width: 1230px) {
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .bottom .newsletter {
+      text-align: center;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .bottom .newsletter .social {
+        text-align: center;
+        margin: 10px; } }
+
+@media (max-width: 575px) {
+  .bottom .newsletterp {
+    margin: 0px;
+    max-width: 280px; } }
+
+@media (max-width: 878px) {
+  footer .eboutique h2 {
+    font-size: 25px; }
+  footer .eboutique p {
+    font-size: 16px;
+    font-weight: normal; }
+  footer .bottom {
+    padding: 0px; }
+    footer .bottom h4 {
+      font-size: 16px; } }
 
 main {
   background-color: #dee4f3;
   width: 100%; }
-
-.banner-img img {
-  width: 100%; }
-
-.product-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 1px 1px 5px 2px #51515195;
-  margin: 10px 0px; }
-  .product-info p {
-    font-family: "Lato", sans-serif;
-    font-size: 18px;
-    margin-top: 0px 10px; }
-  .product-info h3 {
-    font-family: "STIX Two Text", serif;
-    font-size: 26px;
-    font-weight: lighter; }
-  .product-info button {
-    background-color: rgba(0, 0, 0, 0.258);
-    padding-left: 25px;
-    padding-top: 15px;
-    padding-right: 25px;
-    padding-bottom: 15px;
-    font-size: 15px;
-    border-radius: 15px;
+  main .products .product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     box-shadow: 1px 1px 5px 2px #51515195;
-    margin-bottom: 10px; }
-  .product-info button:hover {
-    font-weight: bolder;
-    background-color: #0104002a; }
+    margin: 10px 0px; }
+    main .products .product-info p {
+      font-family: "Lato", sans-serif;
+      font-size: 18px;
+      margin-top: 0px 10px; }
+    main .products .product-info h3 {
+      font-family: "STIX Two Text", serif;
+      font-size: 26px;
+      font-weight: lighter; }
+    main .products .product-info button {
+      background-color: rgba(0, 0, 0, 0.258);
+      padding-left: 25px;
+      padding-top: 15px;
+      padding-right: 25px;
+      padding-bottom: 15px;
+      font-size: 15px;
+      border-radius: 15px;
+      box-shadow: 1px 1px 5px 2px #51515195;
+      margin-bottom: 10px; }
+    main .products .product-info button:hover {
+      font-weight: bolder;
+      background-color: #0104002a; }
+  main .products .banner-img img {
+    width: 100%; }
 
 .destacados-main {
   display: flex;
@@ -256,6 +285,42 @@ main {
         .destacados-main .destacados-bottom .bottom-products .products-display button:hover {
           padding: 30px;
           font-weight: bolder; }
+
+@media (max-width: 1240px) {
+  .destacados-main .destacados-top {
+    height: 400px; }
+    .destacados-main .destacados-top .destacados-overlay {
+      top: 250px; }
+      .destacados-main .destacados-top .destacados-overlay h4 {
+        font-size: 30px; }
+      .destacados-main .destacados-top .destacados-overlay p {
+        font-size: 20px; }
+      .destacados-main .destacados-top .destacados-overlay button {
+        margin-top: 5px; }
+  .destacados-main .destacados-bottom .bottom-title {
+    height: auto;
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px; }
+    .destacados-main .destacados-bottom .bottom-title p {
+      width: auto; }
+  .destacados-main .destacados-bottom .bottom-products {
+    width: fit-content; }
+    .destacados-main .destacados-bottom .bottom-products .products-display {
+      flex-direction: column;
+      height: fit-content;
+      width: 100%; }
+      .destacados-main .destacados-bottom .bottom-products .products-display button {
+        padding: 15px;
+        margin-top: 5px; }
+      .destacados-main .destacados-bottom .bottom-products .products-display .products-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; }
+        .destacados-main .destacados-bottom .bottom-products .products-display .products-text p {
+          width: auto;
+          margin-bottom: 5px; } }
 
 .cremas-frame {
   background-color: #dee4f3; }

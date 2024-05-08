@@ -1,129 +1,182 @@
 .destacados-main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #7f95d141;
+  .destacados-top {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    background-color: #7f95d141;
-    .destacados-top {
+    align-items: center;
+    height: 600px;
+    position: relative;
+    video {
+      overflow: hidden;
+      height: 550px;
+      width: 100%;
+      object-fit: fill;
+      position: relative;
+      z-index: 0;
+    }
+    .destacados-overlay {
+      text-align: center;
+      position: absolute;
+      top: 350px;
+      h4 {
+        font-family: "STIX Two Text", serif;
+        font-size: 50px;
+        color: white;
+      }
+      p {
+        font-family: "Lato", sans-serif;
+        font-size: 30px;
+        color: white;
+      }
+      button:hover {
+        font-weight: bolder;
+      }
+      button {
+        font-family: "Lato", sans-serif;
+        font-weight: lighter;
+        background-color: transparent;
+        color: white;
+        font-size: 20px;
+        margin: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-style: double;
+        border-width: 5px;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+      }
+    }
+  }
+
+  .destacados-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .bottom-title {
+      text-align: center;
+      height: 150px;
+      width: 50%;
+      h3 {
+        margin: 15px;
+        font-family: "STIX Two Text", serif;
+        font-size: xx-large;
+        font-weight: lighter;
+      }
+      p {
+        font-family: "Lato", sans-serif;
+      }
+    }
+    .bottom-products {
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 600px;
-      position: relative;
-      video {
-        overflow: hidden;
-        height: 550px;
-        width: 100%;
-        object-fit: fill;
-        position: relative;
-        z-index: 0;
+      height: 60%;
+      h3 {
+        padding: 5px;
+        margin: 40px;
+        font-family: "STIX Two Text", serif;
+        font-size: 40px;
+        font-weight: lighter;
       }
-      .destacados-overlay {
-        text-align: center;
-        position: absolute;
-        top: 350px;
-        h4 {
-          font-family: "STIX Two Text", serif;
-          font-size: 50px;
-          color: white;
+      .products-display {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 300px;
+        width: 1200px;
+        img {
+          height: 200px;
+          margin: 10px;
+          border-radius: 5%;
+          box-shadow: 1px 1px 5px 2px #51515195;
         }
-        p {
-          font-family: "Lato", sans-serif;
-          font-size: 30px;
-          color: white;
+        .products-text {
+          margin: 10px;
+          h4 {
+            margin-bottom: 5px;
+            font-family: "STIX Two Text", serif;
+            font-size: 20px;
+          }
+          p {
+            margin-top: 5px;
+            font-family: "Lato", sans-serif;
+            font-weight: normal;
+            width: 700px;
+          }
+        }
+
+        button {
+          padding: 25px;
+          margin: 15px;
+          text-align: center;
+          border-style: dotted;
+          border-radius: 5%;
+          box-shadow: 1px 1px 5px 2px #51515195;
+          background-color: #eadfb44c;
         }
         button:hover {
+          padding: 30px;
           font-weight: bolder;
-        }
-        button {
-          font-family: "Lato", sans-serif;
-          font-weight: lighter;
-          background-color: transparent;
-          color: white;
-          font-size: 20px;
-          margin: 15px;
-          padding-left: 50px;
-          padding-right: 50px;
-          border-style: double;
-          border-width: 5px;
-          border-left: none;
-          border-top: none;
-          border-right: none;
         }
       }
     }
-  
-    .destacados-bottom {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      .bottom-title {
-        text-align: center;
-        height: 150px;
-        width: 50%;
-        h3 {
-          margin: 15px;
-          font-family: "STIX Two Text", serif;
-          font-size: xx-large;
-          font-weight: lighter;
+  }
+}
+
+@media (max-width: 1240px) {
+  .destacados-main {
+    .destacados-top {
+      height: 400px;
+      .destacados-overlay {
+        top: 250px;
+        h4 {
+          font-size: 30px;
         }
         p {
-          font-family: "Lato", sans-serif;
+          font-size: 20px;
+        }
+        button {
+          margin-top: 5px;
+        }
+      }
+    }
+    .destacados-bottom {
+      .bottom-title {
+        height: auto;
+        width: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+        p {
+          width: auto;
         }
       }
       .bottom-products {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 60%;
-        h3 {
-          padding: 5px;
-          margin: 40px;
-          font-family: "STIX Two Text", serif;
-          font-size: 40px;
-          font-weight: lighter;
-        }
+        width: fit-content;
         .products-display {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-between;
-          height: 300px;
-          width: 1200px;
-          img {
-            height: 200px;
-            margin: 10px;
-            border-radius: 5%;
-            box-shadow: 1px 1px 5px 2px #51515195;
+          flex-direction: column;
+          height: fit-content;
+          width: 100%;
+          button {
+            padding: 15px;
+            margin-top: 5px;
           }
           .products-text {
-            margin: 10px;
-            h4 {
-              margin-bottom: 5px;
-              font-family: "STIX Two Text", serif;
-              font-size: 20px;
-            }
-            p {
-              margin-top: 5px;
-              font-family: "Lato", sans-serif;
-              font-weight: normal;
-              width: 700px;
-            }
-          }
-  
-          button {
-            padding: 25px;
-            margin: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
-            border-style: dotted;
-            border-radius: 5%;
-            box-shadow: 1px 1px 5px 2px #51515195;
-            background-color: #eadfb44c;
-          }
-          button:hover {
-            padding: 30px;
-            font-weight: bolder;
+            p {
+              width: auto;
+              margin-bottom: 5px;
+            }
           }
         }
       }
     }
   }
+}

@@ -1,4 +1,5 @@
-.eboutique {
+footer {
+  .eboutique {
     background-color: #7f95d1;
     display: flex;
     flex-direction: column;
@@ -15,7 +16,7 @@
       font-weight: lighter;
     }
   }
-  
+
   .bottom {
     display: flex;
     justify-content: space-between;
@@ -73,5 +74,53 @@
       font-weight: bolder;
       font-size: 16px;
     }
+  }
+}
+@media (max-width: 1230px) {
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .newsletter {
+      text-align: center;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .social {
+        text-align: center;
+        margin: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .bottom {
+    .newsletterp {
+      margin: 0px;
+      max-width: 280px;
+    }
+  }
+}
+
+@media (max-width: 878px) {
+  footer{
+    .eboutique {
+      h2 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: normal;
+      }
+    }
+    .bottom {
+      padding: 0px;
+      h4 {
+        font-size: 16px;
+      }
+    }
+  }
   }
   
