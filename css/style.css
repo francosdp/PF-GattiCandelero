@@ -24,7 +24,7 @@ background-color: #7F95D1; */
 .promo {
   padding: 9px;
   text-align: center;
-  background-color: #EADFB4; }
+  background-color: #eadfb4; }
 
 .novedad:hover {
   font-weight: bolder; }
@@ -42,13 +42,13 @@ background-color: #7F95D1; */
 /* Navbar */
 .navbar {
   padding: 0;
-  background-color: #7F95D1;
+  background-color: #7f95d1;
   position: sticky;
   top: 0;
   z-index: 1; }
 
 .navbar .container-fluid {
-  background-color: #7F95D1;
+  background-color: #7f95d1;
   position: sticky;
   top: 0;
   z-index: 1; }
@@ -75,7 +75,7 @@ form .btn {
 
 form .btn:hover {
   color: #010400;
-  background-color: #EADFB4; }
+  background-color: #eadfb4; }
 
 /* Main */
 /* Fuentes
@@ -118,10 +118,9 @@ main {
     border-radius: 15px;
     box-shadow: 1px 1px 5px 2px #51515195;
     margin-bottom: 10px; }
-
-.product-info button:hover {
-  font-weight: bolder;
-  background-color: #0104002a; }
+  .product-info button:hover {
+    font-weight: bolder;
+    background-color: #0104002a; }
 
 /* Footer */
 /* Fuentes
@@ -134,26 +133,24 @@ background-color:#EADFB4;
 background-color: #7F95D1;
 */
 .eboutique {
-  background-color: #7F95D1;
+  background-color: #7f95d1;
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-.eboutique h2 {
-  text-align: center;
-  font-family: "STIX Two Text", serif;
-  color: white;
-  font-size: 50px; }
-
-.eboutique p {
-  font-size: 20px;
-  font-family: "Lato", sans-serif;
-  font-weight: lighter; }
+  .eboutique h2 {
+    text-align: center;
+    font-family: "STIX Two Text", serif;
+    color: white;
+    font-size: 50px; }
+  .eboutique p {
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: lighter; }
 
 .bottom {
   display: flex;
   justify-content: space-between;
-  background-color: #7F95D1;
+  background-color: #7f95d1;
   padding-top: 15px;
   padding-bottom: 15px; }
 
@@ -162,9 +159,8 @@ background-color: #7F95D1;
 
 .newsletter-form {
   margin-left: 10px; }
-
-.newsletter-form input {
-  margin: 3px; }
+  .newsletter-form input {
+    margin: 3px; }
 
 .newsletter p {
   font-size: small;
@@ -176,18 +172,15 @@ background-color: #7F95D1;
 .social {
   text-align: right;
   margin-right: 10px; }
-
-.social a img:hover {
-  width: 55px;
-  height: 55px; }
-
-.social a .facebook {
-  width: 50px;
-  height: 45px; }
-
-.social a img {
-  width: 50px;
-  height: 48px; }
+  .social a img:hover {
+    width: 55px;
+    height: 55px; }
+  .social a .facebook {
+    width: 50px;
+    height: 45px; }
+  .social a img {
+    width: 50px;
+    height: 48px; }
 
 .to-top {
   background-color: #010400;
@@ -559,7 +552,7 @@ background-color:#EADFB4;
 background-color: #7F95D1;
 */
 .cremas-frame {
-  background-color: #DEE4F3; }
+  background-color: #dee4f3; }
 
 .cremas-text {
   text-align: center;
@@ -629,7 +622,7 @@ background-color: #7F95D1;
   padding: 5px 15px;
   margin: 15px;
   border-radius: 15px;
-  background-color: #7F95D1;
+  background-color: #7f95d1;
   color: white;
   font-family: sans-serif;
   font-size: 15px; }
@@ -643,13 +636,13 @@ background-color: #7F95D1;
 /* bacground-color: #DEE4F3 */
 /* main */
 .perfumes-main {
-  background-color: #DEE4F3;
+  background-color: #dee4f3;
   display: flex;
   flex-direction: column;
   height: 100%; }
 
 .perfumes-intro {
-  background-color: #DEE4F3;
+  background-color: #dee4f3;
   width: 100%;
   display: flex;
   flex-direction: column; }
@@ -684,17 +677,17 @@ background-color: #7F95D1;
   font-family: "STIX Two Text", serif;
   font-size: 30px;
   font-weight: bolder;
-  color: #EADFB4; }
+  color: #eadfb4; }
 
 .perfumes-overlay button:hover {
   background-color: #010400;
-  border-color: #DEE4F3; }
+  border-color: #dee4f3; }
 
 .perfumes-overlay button {
   font-family: "Lato", sans-serif;
   font-weight: bolder;
   background-color: #01040090;
-  color: #EADFB4;
+  color: #eadfb4;
   font-size: 20px;
   margin: 15px;
   padding: 15px;
@@ -705,7 +698,7 @@ background-color: #7F95D1;
   border-radius: 10px; }
 
 .second-row {
-  background-color: #DEE4F3;
+  background-color: #dee4f3;
   width: 100%;
   display: flex;
   flex-direction: column; }
@@ -732,13 +725,13 @@ background-color: #7F95D1;
   padding: 3px; }
 
 .perfumes-banners {
-  background-color: #DEE4F3;
+  background-color: #dee4f3;
   height: 100%;
   display: flex;
   flex-direction: column; }
 
 .primer-banner {
-  background-color: #DEE4F3;
+  background-color: #dee4f3;
   height: 800px;
   display: flex;
   flex-direction: column;
@@ -752,7 +745,7 @@ background-color: #7F95D1;
   margin: 20px; }
 
 .banner-uno {
-  background-color: #DEE4F3;
+  background-color: #dee4f3;
   height: 680px;
   display: flex;
   flex-direction: column;
@@ -786,7 +779,7 @@ background-color: #7F95D1;
 .banner-dividido {
   width: 100%;
   height: 700px;
-  background-color: #DEE4F3;
+  background-color: #dee4f3;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -797,7 +790,7 @@ background-color: #7F95D1;
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #DEE4F3; }
+  background-color: #dee4f3; }
 
 .banner img {
   height: 600px;
