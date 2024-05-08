@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap");
+@import './sections/header';
+@import "./sections/nav";
+@import "./sections/footer";
+
 /* Fuentes
 font-family: "Lato", sans-serif
 font-family: "STIX Two Text", serif */
@@ -11,87 +15,6 @@ font-family: "STIX Two Text", serif */
 }
 
 /* INDEX */
-/* Header */
-/* Fuentes
-font-family: "Lato", sans-serif;
-font-family: "STIX Two Text", serif;*/
-/* Paletas
-background-color:#dee4f3;
-background-color: #010400;
-background-color: #EADFB4;
-background-color: #7F95D1; */
-
-.promo:hover {
-  background-color: #eadfb4bf;
-}
-
-.promo {
-  padding: 9px;
-  text-align: center;
-  background-color: #eadfb4;
-}
-
-.novedad:hover {
-  font-weight: bolder;
-}
-
-.novedad {
-  text-decoration: none;
-  color: black;
-}
-
-.center-item {
-  background-color: #010400;
-  text-align: center;
-  color: transparent;
-  padding: 25px;
-}
-
-/* Navbar */
-.navbar {
-  padding: 0;
-  background-color: #7f95d1;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
-.navbar .container-fluid {
-  background-color: #7f95d1;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
-.navbar-brand:hover {
-  font-size: 19.5px;
-  font-weight: bolder;
-}
-
-.nav-link:hover {
-  font-size: 16px;
-  font-weight: bolder;
-}
-
-.dropdown-item:hover {
-  font-size: 16px;
-  font-weight: bolder;
-  box-shadow: -2px 1px 45px 66px rgba(127, 149, 209, 0.65) inset;
-  -webkit-box-shadow: -2px 1px 45px 66px rgba(127, 149, 209, 0.65) inset;
-  -moz-box-shadow: -2px 1px 45px 66px rgba(127, 149, 209, 0.65) inset;
-}
-
-form .btn {
-  background-color: #dee4f3;
-  color: #010400;
-  font-family: "Lato", sans-serif;
-}
-
-form .btn:hover {
-  color: #010400;
-  background-color: #eadfb4;
-}
-
 /* Main */
 /* Fuentes
 font-family: "Lato", sans-serif;
@@ -157,82 +80,6 @@ background-color:#010400;
 background-color:#EADFB4;
 background-color: #7F95D1;
 */
-.eboutique {
-  background-color: #7f95d1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  h2 {
-    text-align: center;
-    font-family: "STIX Two Text", serif;
-    color: white;
-    font-size: 50px;
-  }
-  p {
-    font-size: 20px;
-    font-family: "Lato", sans-serif;
-    font-weight: lighter;
-  }
-}
-
-.bottom {
-  display: flex;
-  justify-content: space-between;
-  background-color: #7f95d1;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  .newsletter {
-    p {
-      font-size: small;
-      margin-left: 10px;
-      a {
-        color: #010400;
-        margin-left: 10px;
-      }
-    }
-    .newsletter-title {
-      margin-left: 10px;
-    }
-    .newsletter-form {
-      margin-left: 10px;
-      input {
-        margin: 3px;
-      }
-    }
-  }
-  .social {
-    text-align: right;
-    margin-right: 10px;
-    a {
-      img:hover {
-        width: 55px;
-        height: 55px;
-      }
-      .facebook {
-        width: 50px;
-        height: 45px;
-      }
-      img {
-        width: 50px;
-        height: 48px;
-      }
-    }
-  }
-  .to-top {
-    background-color: #010400;
-    text-align: center;
-    padding: 15px;
-    font-size: large;
-    a {
-      color: white;
-      text-decoration: none;
-    }
-  }
-  .to-top:hover {
-    font-weight: bolder;
-    font-size: 16px;
-  }
-}
 
 /* DESTACADOS */
 /* Fuentes
@@ -800,295 +647,96 @@ background-color: #7F95D1;
       }
     }
   }
-}
-
-.perfumes-banners {
-  background-color: #dee4f3;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  .primer-banner {
+  .perfumes-banners {
     background-color: #dee4f3;
-    height: 800px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
-    h3 {
-      font-family: "STIX Two Text", serif;
-      font-size: 30px;
-      font-weight: lighter;
-      text-align: center;
-      margin: 20px;
-    }
-    .banner-uno {
+    .primer-banner {
       background-color: #dee4f3;
-      height: 680px;
+      height: 800px;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
-      button:hover {
-        font-weight: bolder;
-        background-color: #0104002a;
-      }
-      button {
-        background-color: rgba(0, 0, 0, 0.258);
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding-left: 25px;
-        padding-top: 15px;
-        padding-right: 25px;
-        padding-bottom: 15px;
-        font-size: 15px;
-        border-radius: 15px;
-        box-shadow: 1px 1px 5px 2px #51515195;
-      }
-      img {
-        width: 100%;
-      }
-      h4 {
-        margin: 5px;
+      margin-top: 30px;
+      h3 {
+        font-family: "STIX Two Text", serif;
+        font-size: 30px;
+        font-weight: lighter;
         text-align: center;
-        font-family: "Lato", sans-serif;
+        margin: 20px;
+      }
+      .banner-uno {
+        background-color: #dee4f3;
+        height: 680px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        button:hover {
+          font-weight: bolder;
+          background-color: #0104002a;
+        }
+        button {
+          background-color: rgba(0, 0, 0, 0.258);
+          margin-top: 10px;
+          margin-bottom: 10px;
+          padding-left: 25px;
+          padding-top: 15px;
+          padding-right: 25px;
+          padding-bottom: 15px;
+          font-size: 15px;
+          border-radius: 15px;
+          box-shadow: 1px 1px 5px 2px #51515195;
+        }
+        img {
+          width: 100%;
+        }
+        h4 {
+          margin: 5px;
+          text-align: center;
+          font-family: "Lato", sans-serif;
+        }
+      }
+    }
+    .banner-dividido {
+      width: 100%;
+      height: 700px;
+      background-color: #dee4f3;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-content: center;
+      .banner {
+        height: 600px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #dee4f3;
+        img {
+          height: 600px;
+          border-radius: 15px;
+          overflow: hidden;
+        }
+        button {
+          background-color: rgba(0, 0, 0, 0.258);
+          margin: 15px;
+          padding-left: 25px;
+          padding-top: 15px;
+          padding-right: 25px;
+          padding-bottom: 15px;
+          font-size: 15px;
+          border-radius: 15px;
+          box-shadow: 1px 1px 5px 2px #51515195;
+        }
+        button:hover {
+          font-weight: bolder;
+          background-color: #0104002a;
+        }
       }
     }
   }
 }
-.banner-dividido {
-  width: 100%;
-  height: 700px;
-  background-color: #dee4f3;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-content: center;
-  .banner {
-    height: 600px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #dee4f3;
-    img {
-      height: 600px;
-      border-radius: 15px;
-      overflow: hidden;
-    }
-    button {
-      background-color: rgba(0, 0, 0, 0.258);
-      margin: 15px;
-      padding-left: 25px;
-      padding-top: 15px;
-      padding-right: 25px;
-      padding-bottom: 15px;
-      font-size: 15px;
-      border-radius: 15px;
-      box-shadow: 1px 1px 5px 2px #51515195;
-    }
-    button:hover {
-      font-weight: bolder;
-      background-color: #0104002a;
-    }
-  }
-}
+
 /* RESPONSIVE */
 /* CREMAS */
 /* MOBILE LAST */
-@media (max-width: 575px) {
-  .newsletter p {
-    margin: 0px;
-    max-width: 280px;
-  }
-}
-
-@media (max-width: 878px) {
-  .eboutique h2 {
-    font-size: 25px;
-  }
-
-  .eboutique p {
-    font-size: 16px;
-    font-weight: normal;
-  }
-
-  .bottom {
-    padding: 0px;
-  }
-
-  .bottom h4 {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 1120px) {
-  .cremas-text h3 {
-    font-size: 25px;
-  }
-
-  .cremas-text h4 {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 1230px) {
-  .bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .social {
-    text-align: center;
-    margin: 10px;
-  }
-
-  .newsletter {
-    text-align: center;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media (max-width: 1240px) {
-  .destacados-top {
-    height: 400px;
-  }
-
-  .destacados-overlay {
-    top: 250px;
-  }
-
-  .destacados-overlay h4 {
-    font-size: 30px;
-  }
-
-  .destacados-overlay p {
-    font-size: 20px;
-  }
-
-  .destacados-overlay button {
-    margin-top: 5px;
-  }
-
-  .bottom-products {
-    width: fit-content;
-  }
-
-  .products-display {
-    flex-direction: column;
-    height: fit-content;
-    width: 100%;
-  }
-
-  .products-display button {
-    padding: 15px;
-    margin-top: 5px;
-  }
-
-  .products-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .products-text p {
-    width: auto;
-    margin-bottom: 5px;
-  }
-
-  .bottom-title {
-    height: auto;
-    width: auto;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .bottom-title p {
-    width: auto;
-  }
-}
-
-@media (max-width: px) {
-  .perfumes-intro h3 {
-    font-size: 20px;
-    width: auto;
-  }
-
-  .first-row img {
-    height: 220px;
-  }
-  .perfumes-overlay {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 350px;
-    justify-content: space-between;
-  }
-  .perfumes-overlay h4 {
-    font-size: 20px;
-  }
-  .perfumes-overlay button {
-    padding: 10px;
-    margin: 5px;
-  }
-  .perfumes-banners button {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding-left: 12px;
-    padding-top: 7px;
-    padding-right: 12px;
-    padding-bottom: 7px;
-    font-size: 12px;
-  }
-  .primer-banner {
-    height: 450px;
-  }
-  .banner-uno {
-    height: 400px;
-  }
-  .banner-uno img {
-    height: 200px;
-  }
-  .banner-dividido {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-  .banner {
-    height: 400px;
-  }
-  .banner img {
-    width: 412px;
-    height: 340px;
-    border-radius: 0;
-  }
-
-  .perfumes-grupal {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .perfumes-individual {
-    display: flex;
-    flex-direction: row;
-    margin: 5px;
-    width: auto;
-  }
-
-  .perfumes-individual a img {
-    width: 150px;
-    height: 150px;
-    margin: 5px;
-  }
-
-  .perfumes-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 12px;
-    margin: 5px;
-  }
-}

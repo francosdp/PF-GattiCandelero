@@ -1,0 +1,43 @@
+.navbar {
+    padding: 0;
+    background-color: #7f95d1;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .navbar .container-fluid {
+    background-color: #7f95d1;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .navbar-brand:hover {
+    font-size: 19.5px;
+    font-weight: bolder;
+  }
+  
+  .nav-link:hover {
+    font-size: 16px;
+    font-weight: bolder;
+  }
+  
+  .dropdown-item:hover {
+    font-size: 16px;
+    font-weight: bolder;
+    box-shadow: -2px 1px 45px 66px rgba(127, 149, 209, 0.65) inset;
+    -webkit-box-shadow: -2px 1px 45px 66px rgba(127, 149, 209, 0.65) inset;
+    -moz-box-shadow: -2px 1px 45px 66px rgba(127, 149, 209, 0.65) inset;
+  }
+  
+  form .btn {
+    background-color: #dee4f3;
+    color: #010400;
+    font-family: "Lato", sans-serif;
+  }
+  
+  form .btn:hover {
+    color: #010400;
+    background-color: #eadfb4;
+  }
