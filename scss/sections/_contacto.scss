@@ -1,0 +1,250 @@
+.contact-main {
+  padding-top: 60px;
+  background-color: #dee4f3;
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 10px 5px;
+  grid-auto-flow: row;
+  grid-template-areas: "contact-text contact-form";
+  .contact-text {
+    grid-area: contact-text;
+    display: flex;
+    flex-direction: column;
+    .contact-us {
+      padding: 20px;
+      margin-left: 10px;
+      h3 {
+        padding-bottom: 10px;
+        font-family: "STIX Two Text", serif;
+        font-size: x-large;
+        font-weight: 500;
+        text-decoration: underline black;
+      }
+      p {
+        padding-top: 10px;
+        font-family: "Lato", sans-serif;
+        margin-left: 5px;
+      }
+    }
+    .contact-phone {
+      padding: 20px;
+      margin-left: 10px;
+      h4 {
+        padding-bottom: 10px;
+        font-family: "STIX Two Text", serif;
+        font-size: large;
+        text-decoration: underline black;
+      }
+      p {
+        font-family: "Lato", sans-serif;
+        padding: 15px 0px 0px 0px;
+        margin-left: 5px;
+      }
+      a {
+        color: #010400;
+        font-family: "Lato", sans-serif;
+        padding: 15px 0px 0px 0px;
+        margin-left: 5px;
+      }
+    }
+  }
+  .contact-form {
+    grid-area: contact-form;
+    .form-user {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.3fr 0.8fr auto;
+      grid-auto-columns: 1fr;
+      gap: 10px 5px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "form-title"
+        "form-user-info"
+        "form-user-comply";
+      .form-title {
+        grid-area: form-title;
+        padding: 20px;
+        margin-left: 10px;
+        h3 {
+          font-family: "STIX Two Text", serif;
+          font-size: 24px;
+          font-weight: 600;
+          text-decoration: underline black;
+        }
+        p {
+          position: relative;
+          top: 10px;
+          font-family: "Lato", sans-serif;
+          font-size: medium;
+          margin-left: 5px;
+        }
+      }
+      .form-user-info {
+        padding: 20px;
+        margin-left: 10px;
+        grid-area: form-user-info;
+        h4 {
+          background-color: transparent;
+          font-family: "STIX Two Text", serif;
+          font-size: 18px;
+          font-weight: normal;
+        }
+        .form-personal-info {
+          .input-form-1 {
+            width: 400px;
+            padding: 5px;
+            margin: 2px;
+            appearance: none;
+            background: #2f2f2f26;
+            outline: none;
+            font-size: 14px;
+            font-family: "Lato", sans-serif;
+            border-radius: 3px;
+            border-style: groove;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+          }
+          .input-form-2 {
+            position: relative;
+            width: 400px;
+            padding: 5px;
+            margin: 2px;
+            appearance: none;
+            background: #2f2f2f26;
+            outline: none;
+            font-size: 14px;
+            font-family: "Lato", sans-serif;
+            border-radius: 3px;
+            border-style: groove;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+          }
+
+          .input-form-3 {
+            width: 400px;
+            padding: 5px;
+            margin: 2px;
+            margin-top: 5px;
+            appearance: none;
+            background: #2f2f2f26;
+            outline: none;
+            font-size: 14px;
+            font-family: "Lato", sans-serif;
+            border-radius: 3px;
+            border-style: groove;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+          }
+        }
+        .form-user-comply {
+          grid-area: form-user-comply;
+          h4 {
+            font-family: "STIX Two Text", serif;
+            font-size: 18px;
+            font-weight: normal;
+            padding: 15px 0px 0px 0px;
+          }
+          h5 {
+            font-family: "STIX Two Text", serif;
+            font-size: 16px;
+            font-weight: normal;
+            padding: 0px 0px 15px 0px;
+            margin-left: 5px;
+          }
+          .input-asking-1 {
+            width: 400px;
+            padding: 5px;
+            margin: 2px;
+            margin-top: 5px;
+            appearance: none;
+            background: #2f2f2f26;
+            outline: none;
+            font-size: 14px;
+            font-family: "Lato", sans-serif;
+            border-radius: 3px;
+            border-style: groove;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            position: relative;
+            top: -20px;
+          }
+          .input-asking-2 {
+            width: 80%;
+            padding: 5px;
+            margin: 2px;
+            margin-top: 5px;
+            appearance: none;
+            background: #2f2f2f26;
+            outline: none;
+            font-size: 14px;
+            font-family: "Lato", sans-serif;
+            border-radius: 3px;
+            border-style: groove;
+            position: relative;
+            bottom: 15px;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1020px) {
+  .contact-main {
+    display: flex !important;
+    flex-direction: column !important;
+    .contact-text {
+      text-align: center;
+    }
+    .contact-form {
+      .form-user {
+        .form-title {
+          h3 {
+            font-family: "STIX Two Text", serif;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: underline black;
+            text-align: center;
+          }
+          p {
+            position: relative;
+            top: 8px;
+            font-family: "Lato", sans-serif;
+            font-size: medium;
+            margin-left: 5px;
+          }
+        }
+        .form-user-info {
+          display: flex;
+          flex-direction: column;
+          .form-personal-info {
+            .input-form-1 {
+              width: 80%;
+            }
+            .input-form-2 {
+              width: 80%;
+            }
+            .input-form-3 {
+              width: 80%;
+            }
+          }
+          .form-user-comply {
+            .input-asking-1 {
+              width: 75%;
+            }
+            .input-asking-2 {
+              width: 75%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
