@@ -1,25 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap");
-@import './sections/header';
-@import "./sections/nav";
-@import "./sections/footer";
+@import "./sections/utilidades/reseteo";
+@import "./sections/secciones/footer";
+@import "./sections/secciones/header";
+@import "./sections/secciones/nav";
 @import "./sections/index";
-@import "./sections/destacados";
-@import "./sections/cremas";
-@import "./sections/perfumes";
-@import "./sections/contacto";
-
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Lato", sans-serif;
-  box-sizing: border-box;
-}
-/* Fuentes
-font-family: "Lato", sans-serif;
-font-family: "STIX Two Text", serif;*/
-/* Paletas
-background-color:#dee4f3;
-background-color:#010400;
-background-color:#EADFB4;
-background-color: #7F95D1;
-*/
+@import "./sections/paginas/destacados";
+@import "./sections/paginas/cremas";
+@import "./sections/paginas/perfumes;";
+@import "./sections/paginas/contacto";
+@import "./sections/paginas/index";
