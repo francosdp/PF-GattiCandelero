@@ -59,17 +59,19 @@ footer .bottom {
     footer .bottom .social a img {
       width: 50px;
       height: 48px; }
-  footer .bottom .to-top {
-    background-color: #010400;
-    text-align: center;
-    padding: 15px;
-    font-size: large; }
-    footer .bottom .to-top a {
-      color: white;
-      text-decoration: none; }
-  footer .bottom .to-top:hover {
-    font-weight: bolder;
-    font-size: 16px; }
+
+footer .to-top {
+  background-color: #000000;
+  text-align: center;
+  padding: 15px;
+  font-size: large; }
+  footer .to-top a {
+    color: white;
+    text-decoration: none; }
+
+footer .to-top:hover {
+  font-weight: bolder;
+  font-size: 20px; }
 
 @media (max-width: 1230px) {
   .bottom {
