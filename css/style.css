@@ -798,7 +798,13 @@ main {
             bottom: 15px;
             overflow: hidden; }
           .contact-main .contact-form .form-user .form-user-info .form-user-comply .user-comply-button {
-            padding: 5px; }
+            padding: 5px;
+            background: #2f2f2f08;
+            border-radius: 5px; }
+          .contact-main .contact-form .form-user .form-user-info .form-user-comply .user-comply-button:hover {
+            padding: 7px;
+            background: #2f2f2f26;
+            border-radius: 5px; }
 
 @media (max-width: 1020px) {
   .contact-main {

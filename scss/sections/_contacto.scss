@@ -192,6 +192,13 @@
           }
           .user-comply-button{
             padding: 5px;
+            background: #2f2f2f08;
+            border-radius: 5px;
+          }
+          .user-comply-button:hover{
+            padding: 7px;
+            background: #2f2f2f26;
+            border-radius: 5px;
           }
         }
       }
