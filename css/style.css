@@ -797,12 +797,14 @@ main {
             position: relative;
             bottom: 15px;
             overflow: hidden; }
+          .contact-main .contact-form .form-user .form-user-info .form-user-comply .user-comply-button {
+            padding: 5px; }
 
 @media (max-width: 1020px) {
   .contact-main {
     display: flex !important;
     flex-direction: column !important; }
-    .contact-main .contact-text {
+    .contact-main .contact-text .contact-us h3 {
       text-align: center; }
     .contact-main .contact-form .form-user .form-title h3 {
       font-family: "STIX Two Text", serif;

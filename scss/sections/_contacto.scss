@@ -190,6 +190,9 @@
             bottom: 15px;
             overflow: hidden;
           }
+          .user-comply-button{
+            padding: 5px;
+          }
         }
       }
     }
@@ -201,7 +204,11 @@
     display: flex !important;
     flex-direction: column !important;
     .contact-text {
-      text-align: center;
+      .contact-us{
+        h3{
+          text-align: center;
+        }
+      }
     }
     .contact-form {
       .form-user {
@@ -224,6 +231,7 @@
         .form-user-info {
           display: flex;
           flex-direction: column;
+
           .form-personal-info {
             .input-form-1 {
               width: 80%;
